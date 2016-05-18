@@ -32,4 +32,19 @@ class Album
     return result
   end
 
+  def self.find( id )
+    sql = "SELECT * FROM albums 
+          WHERE id = #{id};"
+    outcome = SqlRunner.run( sql )
+    result = outcome.map {|a| Album.new(a)}
+    return result.first
+  end
+
+  def self.delete( id )
+    sql = "DELETE FROM albums
+          WHERE id = #{id}
+          "
+    SqlRunner.run( sql )
+  end
+
 end
