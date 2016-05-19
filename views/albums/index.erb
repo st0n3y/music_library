@@ -1,9 +1,9 @@
 <h1>All Albums</h1>
 
 <% @albums.each do |album| %>
-  <b><%= album.name %></b><br>
+  <p class="album"><%= album.name %></p>
 
-  <b>-- <%= album.artist.name %></b><br>
+  <p class="artist">-- <%= album.artist.name %></p>
   <hr>
 
 <% end %>

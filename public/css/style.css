@@ -1,20 +1,28 @@
 body {
-  background-color: #cbe0e3;
-  background-image: url(http://www.yaylamag.com/wp-content/uploads/2015/09/Photo-of-John-Peel-Digital-Archive-by-Co.Create.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 500px 100px;
-  background-size: 600px 350px;
+    background-color: #cbe0e3;
+    background-image: url(https://img0.etsystatic.com/136/1/12676270/il_214x170.940556070_fmkp.jpg);
+    background-repeat: repeat-y;
+    background-attachment: relative;
+    background-position: 90%;
+    background-size: 600px 350px;
 }
 
 h1 {
   font-family: 'Orbitron', sans-serif;
   font-size: 3em;
+  margin-left: 75px;
 }
 
-p {
+.album {
+  font-family: 'Gurajada', serif;
+  font-size: 2em;
+  margin: -10px -10px -10px 75px;
+}
+
+.artist {
   font-family: 'Gurajada', serif;
   font-size: 1.5em;
+  margin: -10px -10px -10px 75px;
 }
 
 hr {
