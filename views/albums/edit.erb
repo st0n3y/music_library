@@ -3,16 +3,16 @@
 <form action="/albums" method="post">
 <input type="hidden" name="_method" value="put">
 
-  <label for="name">Name:</label>
+  <label for="name">Title:</label>
   <input type="text" name="name" value="<%= @album.name() %>" />
 
   <input type="submit" value="Update album" />
 
 </form>
 
-<form action = "/albums/<%= @album.id %>" method = "post">
-<input type = "hidden" name = "_method" value = "delete" />
+<form action ="/albums/<%= @album.id %>" method ="post">
+<input type ="hidden" name ="_method" value ="delete" />
   
-  <input type = "submit" value = "Delete album" />
+  <input type ="submit" value ="Delete album" />
 
 </form>

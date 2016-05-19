@@ -2,4 +2,8 @@
 
 <% @albums.each do |album| %>
   <b><%= album.name %></b><br>
+
+  <b>-- <%= album.artist.name %></b><br>
+  <hr>
+
 <% end %>

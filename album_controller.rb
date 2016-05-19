@@ -1,7 +1,7 @@
-require 'sinatra'
-require 'sinatra/contrib/all' if development?
-require 'pry-byebug'
-require_relative './models/album.rb'
+# require 'sinatra'
+# require 'sinatra/contrib/all' if development?
+# require 'pry-byebug'
+# require_relative './models/album.rb'
 
 get '/albums' do
   #INDEX
@@ -11,6 +11,7 @@ end
 
 get '/albums/new' do
   #NEW
+  @artists = Artist.all()
   erb(:'albums/new')
 end
 
